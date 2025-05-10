@@ -4,9 +4,11 @@ import "./globals.css";
 
 // later
 import { Inter, Space_Grotesk } from "next/font/google";
-const inter = Inter({ subsets: ['latin'],
+import Navbar from "@/components/Navbar";
+const inter = Inter({
+  subsets: ['latin'],
   variable: '--font-inter',
- })
+})
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   variable: '--font-space-grotesk',
@@ -39,7 +41,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${spaceGrotesk.variable} antialiased`}
       >
-        {children}
+        <main className="max-w-10xl mx-auto">
+          <Navbar />
+          {children}
+        </main>
       </body>
     </html>
   );
