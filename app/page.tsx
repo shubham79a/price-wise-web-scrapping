@@ -20,8 +20,9 @@ const Home = () => {
               />
             </p>
 
-            <h1 className='mt-4 md:text-4xl text-6xl leading-[72px] font-bold tracking-[-1.2px] text-gray-900'>
-              Unleash the Power of <span className='text-[#E43030]'>PriceWise</span>
+            <h1 className='mt-4 text-6xl leading-[72px] font-bold tracking-[-1.2px] text-gray-900'>
+              Unleash the Power of
+              <span className='text-[#E43030]'>PriceWise</span>
             </h1>
 
             <p className='mt-6'>
